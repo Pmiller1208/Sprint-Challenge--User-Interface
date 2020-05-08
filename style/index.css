@@ -285,10 +285,34 @@ footer nav a {
 
 @media(max-width: 400px){
     .container {
-        width: 100%;
+        width: 90%;
+    }
+    
+    #head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    body {
-        width: 100%;
+    footer nav {
+        font-size: 2.4rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer nav a {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .middle-content .boxes{
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .boxes .box{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
