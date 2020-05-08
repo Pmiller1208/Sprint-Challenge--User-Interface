@@ -21,7 +21,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    border: 1px solid red;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -30,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    
 }
 ol, ul {
 	list-style: none;
@@ -84,7 +86,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -92,22 +94,26 @@ p {
     padding: 2% 0;
 }
 
+.jumbo img {
+    width: 100%
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 2%;  
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     border-bottom: 1px dashed black;
 }
 
@@ -208,4 +214,43 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width: 800px){
+    .container {
+        width: 80%;
+    }
+    
+    header a {
+        font-size: 2.4rem
+    }
+
+    .top-content .text-container {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 2.4rem
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .boxes {
+        width: 100%;
+        display: flex;
+    }
+}
+
+@media(max-width: 400px){
+    .container {
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+    }
 }
