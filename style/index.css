@@ -307,12 +307,13 @@ footer nav a {
     }
 
     .middle-content .boxes{
-        width: 40%;
+        width: 100%;
         margin: 0 auto;
     }
 
-    .boxes .box{
+    .boxes{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
     }
 }
