@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -54,21 +54,42 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+}
+
+header {
+    padding: 5% 0;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 p {
     line-height: 1.4;
+    font-size: 1.6rem;
 }
 
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+.jumbo {
+    padding: 2% 0;
 }
 
 .top-content {
@@ -110,6 +131,10 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box {
+    font-size: 1.6rem;
 }
 
 #box1 {
